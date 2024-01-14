@@ -1,49 +1,46 @@
-# Hybrid-Error-Data-Cleaning-Technology-for-Human-In-The-Loop
-The framework includes detection and repair methods for missing points and outlier, two common data quality problems. This study enables human experts to continuously adjust the dynamic and reasonable value range of data to achieve more accurate detection and repair of outliers. Reduce labor costs while improving data cleaning quality.
-### 一、项目名称和概述
+### I. Project Overview
 
-该项目实现了毕业设计《人在环路的混合型错误数据清洗技术研究》提出的清洗框架，利用机器学习技术，
-将清洗算法与人类专家的意见结合，完成对缺失点和离群值的清洗，以提高数据质量
+This study introduces a hybrid human-in-the-loop framework for erroneous data cleaning. The framework comprises methods for detecting and repairing two common data quality issues: missing points and outliers. The algorithm first assesses whether it can automatically correct anomalies. If it does not meet the confidence threshold, it interacts with human experts, involving them in the repair while recording their opinions. This approach allows human experts to continuously adjust the dynamic rational value range of the data, achieving more accurate detection and repair of anomalies. It aims to improve data cleaning quality while reducing manual labor costs. The study conducts experiments on the classification accuracy of the proposed cleaning framework under different noise data ratios and regression accuracy after changes in the rational value environment. It considers changes in classification accuracy and predictive regression accuracy when multiple variables change. Experiments show that the framework has good application value in improving data quality when variables meet the requirements.
 
-### 二、执行环境
+### II. Execution Environment
 
-| 软件      | 版本         |
-|---------|------------|
-| windows | windows 10 |
-| python  | Python 3.7 |
+| Software | Version     |
+|----------|-------------|
+| Windows  | Windows 10  |
+| Python   | Python 3.7  |
 
-### 三、软件设置
+### III. Software Setup
 
-**执行软件**：Pycharm
+**Execution Software**: Pycharm
 
-**配置**：
+**Configuration**:
 
-python包：pandas, keras, tensorflow, sklearn, numpy
+Python packages: pandas, keras, tensorflow, sklearn, numpy
 
-### 四、程序介绍
+### IV. Program Introduction
 
-| 模块                   | 模块描述             |
-|:---------------------|------------------|
-| main                 | 运行该模块以开始启动整体清洗框架 |
-| data                 | 数据操作             |
-| MissingDataOperation | 检查并修复缺失点         |
-| OutlierDataOperation | 检查并修复离群点         |
-| AutomaticCorrectData | 机器学习自动修复         |
-| UserOperation        | 用户提供修复意见         |
-| RecordUserOperation  | 记录用户意见记录         |
-| Experiment1_MakeData | 生成用于实验一的数据       |
-| Experiment1_TestData | 测试实验一结果          |
-| Experiment2_MakeData | 生成用于实验二的数据       |
-| Experiment2_TestData | 测试实验二结果          |
+| Module                | Module Description          |
+|-----------------------|-----------------------------|
+| main                  | Run this module to start the entire cleaning framework |
+| data                  | Data operations             |
+| MissingDataOperation  | Check and repair missing points  |
+| OutlierDataOperation  | Check and repair outliers   |
+| AutomaticCorrectData  | Machine learning-based automatic repair |
+| UserOperation         | User-provided repair suggestions |
+| RecordUserOperation   | Record user opinion logs    |
+| Experiment1_MakeData  | Generate data for Experiment 1  |
+| Experiment1_TestData  | Test results of Experiment 1 |
+| Experiment2_MakeData  | Generate data for Experiment 2  |
+| Experiment2_TestData  | Test results of Experiment 2 |
 
-### 五、使用说明
+### V. Usage Instructions
 
-执行`main.py` 以启动整体清洗框架
+Run `main.py` to start the entire cleaning framework.
 
-执行`Experiment1_MakeData.py` 以生成用于实验一的数据
+Run `Experiment1_MakeData.py` to generate data for Experiment 1.
 
-执行`Experiment1_TestData.py` 以测试实验一结果
+Run `Experiment1_TestData.py` to test the results of Experiment 1.
 
-执行`Experiment2_MakeData.py` 以生成用于实验二的数据
+Run `Experiment2_MakeData.py` to generate data for Experiment 2.
 
-执行`Experiment2_TestData.py` 以测试实验二结果
+Run `Experiment2_TestData.py` to test the results of Experiment 2.
